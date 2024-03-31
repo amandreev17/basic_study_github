@@ -4,6 +4,6 @@
 int main()
 {
     std::string name;
-    std::cin >> name;
-    std::cout << "Hello, world " << name << std::endl;
+    std::cin >> name;                                  // enter name
+    std::cout << "Hello, world " << name << std::endl; // print name
 }
