@@ -282,6 +282,21 @@ $ git commit -m "Mozilla codestyle"
 [patch2 e73f852] Mozilla codestyle
  1 file changed, 5 insertions(+), 4 deletions(-)
 
+$ git push origin patch2
+еречисление объектов: 7, готово.
+Подсчет объектов: 100% (7/7), готово.
+При сжатии изменений используется до 4 потоков
+Сжатие объектов: 100% (3/3), готово.
+Запись объектов: 100% (4/4), 404 байта | 404.00 КиБ/с, готово.
+Всего 4 (изменений 1), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'patch2' on GitHub by visiting:
+remote:      https://github.com/amandreev17/timp-lab02/pull/new/patch2
+remote: 
+To github.com:amandreev17/timp-lab02.git
+ * [new branch]      patch2 -> patch2
+```
    
 4. В ветке master в удаленном репозитории измените комментарии, например, расставьте знаки препинания, переведите комментарии на другой язык.
 Изменяем через графический интерфейс комментарий на русский язык
