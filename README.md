@@ -1,5 +1,5 @@
 # timp-lab02
-**Part1**
+**Part 1**
 
 1. Создайте пустой репозиторий на сервисе github.com (или gitlab.com, или bitbucket.com).
 
@@ -38,7 +38,7 @@ branch 'main' set up to track 'origin/main'.
    
 3. Создайте файл hello_world.cpp в локальной копии репозитория (который должен был появиться на шаге 2). Реализуйте программу Hello world на языке C++ используя плохой стиль кода. Например, после заголовочных файлов вставьте строку using namespace std;.
 ```bash
-$ touch hello_world.cpp
+$ touch hello-world.cpp
 
 '''#include <iostream>
 using namespace std;
@@ -50,7 +50,7 @@ int main() {
     
 4. Добавьте этот файл в локальную копию репозитория.
 ```bash
-$ git add hello_world.cpp
+$ git add hello-world.cpp
 ```
    
 5. Закоммитьте изменения с осмысленным сообщением.
@@ -103,7 +103,7 @@ To github.com:amandreev17/timp-lab02.git
 9. Проверьте, что история коммитов доступна в удалёный репозитории.
    
 
-**Part2**
+**Part 2**
 
 1. В локальной копии репозитория создайте локальную ветку patch1.
 ```bash
@@ -128,7 +128,7 @@ int main() {
    
 3. commit, push локальную ветку в удалённый репозиторий.
 ```bash
-$ git add hello_world.cpp
+$ git add hello-world.cpp
 $ git commit -m 'remove using namespase std'
 
 [patch1 807bf4d] remove using namespase std
@@ -259,36 +259,37 @@ $ git branch -d patch1
 Ветка patch1 удалена (была 025c741).
 ```
 
-**Part3**
+**Part 3**
 
 1. Создайте новую локальную ветку patch2.
 ```bash
-Команда: git checkout -b patch2
+$ git checkout -b patch2
 
-Вывод:Переключились на новую ветку «patch2»
+Переключено на новую ветку «patch2»
 ```
     
-   2) Измените code style с помощью утилиты clang-format. Например, используя опцию -style=Mozilla.
+2. Измените code style с помощью утилиты clang-format. Например, используя опцию -style=Mozilla.
 ```bash
-Команда: clang-format -style=Mozilla -i hello_world.cpp
+$ sudo apt install clang-format
+$ clang-format -style=Mozilla -i hello-world.cpp
 ```
    
-   3) commit, push, создайте pull-request patch2 -> master.
+3. commit, push, создайте pull-request patch2 -> master.
 ```bash
-Команда: git add hello_world.cpp
+$ git add hello-world.cpp
 
-Команда:git commit -m "Updated code style using clang-format"
-Вывод:[patch2 ebad822] Updated code style using clang-format
- 1 file changed, 10 insertions(+), 10 deletions(-)
-```
+$ git commit -m "Mozilla codestyle"
+[patch2 e73f852] Mozilla codestyle
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
    
-   4) В ветке master в удаленном репозитории измените комментарии, например, расставьте знаки препинания, переведите комментарии на другой язык.
+4. В ветке master в удаленном репозитории измените комментарии, например, расставьте знаки препинания, переведите комментарии на другой язык.
 Изменяем через графический интерфейс комментарий на русский язык
    
-   5) Убедитесь, что в pull-request появились конфликтны.
+5. Убедитесь, что в pull-request появились конфликтны.
 Пулл реквест пишет, что merge невозможен, у нас конфликт
    
-   6) Для этого локально выполните pull + rebase (точную последовательность команд, следует узнать самостоятельно). Исправьте конфликты.
+6. Для этого локально выполните pull + rebase (точную последовательность команд, следует узнать самостоятельно). Исправьте конфликты.
    
 ```bash
 $ git pull origin main
@@ -311,7 +312,7 @@ $ git switch patch2
 
 $ git add .
 
-Команда:git commit -m "Commit message here"
+$ git commit -m "new chages"
 [patch2 eb078ff] new chages
  1 file changed, 1 deletion(-)
 
