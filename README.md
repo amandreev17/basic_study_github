@@ -1,4 +1,4 @@
-# timp-lab02
+# Lab02
 **Part 1**
 
 1. Создайте пустой репозиторий на сервисе github.com (или gitlab.com, или bitbucket.com).
